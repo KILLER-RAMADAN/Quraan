@@ -43,7 +43,11 @@ background:   #1B2631 ;
     width: 100%;
 }
 """
+
+
 @config(css_style=css,theme="dark")
+@app.route("/")
+
 def run_app():
     put_image("https://mvslim.com/wp-content/uploads/2021/03/quran-1.jpeg",width="1000px",height="250px",title="img")
     
@@ -168,7 +172,7 @@ if __name__=="__main__":
     parser.add_argument("-p","--port",type=int,default=8080)
     args=parser.parse_args()
     
-    pywebio.start_server(run_app, port=34345, debug=True)
+    pywebio.start_server(run_app, port=34345, debug=True, use_reloader=False)
 # <summary>القرآن الكريم/مصحف مرتل / حفص عن عاصم / 	
 # الشيخ أبو عبد الله المظفر </summary>
 #              <summary>القرآن الكريم/مصحف مرتل / حفص عن عاصم / أبو بكر الشاطري </summary>
