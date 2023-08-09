@@ -4,7 +4,7 @@
 
         {
           "src":"api/Quraan.py",
-           "use":"vercel/python"
+           "use":"@vercelpython"
      
 
         }
