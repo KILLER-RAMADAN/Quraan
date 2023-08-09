@@ -167,11 +167,7 @@ def run_app():
 
 app.add_url_rule('/', 'webio_view', webio_view(run_app),methods=["GET","POST"])
 if __name__ == "__main__":
-    parser=argparse.ArgumentParser()
-    parser.add_argument("-p","--port",type=int,default=8080)
-    args=parser.parse_args()
-    
-    pywebio.start_server(run_app, port=34345, debug=False, use_reloader=False)
+    pywebio.start_server(run_app ,debug=False)
 # <summary>القرآن الكريم/مصحف مرتل / حفص عن عاصم / 	
 # الشيخ أبو عبد الله المظفر </summary>
 #              <summary>القرآن الكريم/مصحف مرتل / حفص عن عاصم / أبو بكر الشاطري </summary>
