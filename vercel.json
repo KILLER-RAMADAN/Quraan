@@ -1,0 +1,38 @@
+{
+    "builds":[
+
+
+        {
+          "src":"api/Quraan.py",
+           "use":"@vercelpython"
+     
+
+        }
+    ],
+
+    "routes":[
+
+
+      { 
+
+      "src":"/(.*)",
+      "dest":"api/Quraan.py"
+
+
+
+
+      }
+    
+    
+    
+    ]
+
+
+
+
+
+
+
+
+
+}
